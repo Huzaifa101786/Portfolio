@@ -1,0 +1,112 @@
+﻿@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@*@using Multiple_Model_Core_MVC.Models*@
+@model dynamic
+@*@model List<Portfolio.Models.Portfolio_Data>*@
+
+    @*
+        For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+    *@
+    @{
+    }
+@*<head>
+    <style>
+background-image: url(Images/bg.png)
+</style>
+</head>*@
+@*<img src="~/Images/bg.png" />*@
+
+
+<section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="text-1">Hello, my name is</div>
+            <div class="text-2">MUHAMMAD HUZAIFA</div>
+            <div class="text-3">And I'm a .net web developer<span class="typing"></span></div>
+            <a href="#">Contact me</a>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About me</h2>
+        <div class="about-content">
+            <div class="column left">
+                <img src="~/Images/front.png" alt="">
+            </div>
+            <div class="column right">
+                <div class="text">I'm Huzaifa and I'm a .net Developer<span class="typing-2"></span></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                <a href="#">Download CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    
+
+
+
+
+    <br>
+    <br>
+
+    <div class="container py-3 text-lg-center">
+        <h1 class="text-center">MY EXPERIENCES</h1>
+    </div>
+
+<div class="row">
+    <div class="container container_exp">
+        <img class="img_exp" src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="" />
+        <p class="title_exp">card title</p>
+        <div class="overlay_exp"></div>
+        <div class="button button_exp"><a href="#"> BUTTON </a></div>
+    </div>
+    <div class="container container_exp">
+        <img class="img_exp" src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="" />
+        <p class="title_exp">card title</p>
+        <div class="overlay_exp"></div>
+        <div class="button button_exp"><a href="#"> BUTTON </a></div>
+    </div>
+</div>
+<br />
+<br />
+
+    <div class="container py-3 text-lg-center">
+        <h1 class="text-center">MY PROJECTS</h1>
+   
+
+    <div class="container" style="margin-top:50px;">
+        <div class="row mt">
+            @*@foreach (var data in Model)*@
+            @foreach (Portfolio_Data data in Model.portf)
+             {
+            <div class="col-3 mb-5">
+                <div class="card-sl">
+                    <div class="card-image">
+
+                        <img class="imgsm" src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+
+                    </div>
+
+                    <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                    <div class="card-heading">
+                        @data.Proj_Name
+                    </div>
+                    <div class="card-text">
+                        @data.Proj_Description
+                    </div>
+                    <div class="card-text">
+                        @data.Proj_Language
+                    </div>
+                    <a href="" class="card-button"> Check Details</a>
+                </div>
+            </div>
+        }
+
+        </div>
+    </div>
+</div>
