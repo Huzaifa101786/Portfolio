@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Images\\bg.png"
     },
     {
+      "Id": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\Images\\cv.pdf",
+      "PackagePath": "staticwebassets\\Images\\cv.pdf"
+    },
+    {
       "Id": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\Images\\front.png",
       "PackagePath": "staticwebassets\\Images\\front.png"
     },

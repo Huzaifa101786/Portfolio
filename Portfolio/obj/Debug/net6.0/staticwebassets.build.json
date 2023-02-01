@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yKkce2AUpSLhMz6OJe4OVMMBo62P/oxdEPATUJNFLUc=",
+  "Hash": "ihYk2b69hcJVFDjVKY0N4HUjHE4HIo+UigE7Vt7zixU=",
   "Source": "Portfolio",
   "BasePath": "_content/Portfolio",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\bg.png"
+    },
+    {
+      "Identity": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\Images\\cv.pdf",
+      "SourceId": "Portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\",
+      "BasePath": "_content/Portfolio",
+      "RelativePath": "Images/cv.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\cv.pdf"
     },
     {
       "Identity": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\Images\\front.png",
