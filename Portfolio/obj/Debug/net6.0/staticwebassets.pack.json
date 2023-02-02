@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets\\Images\\front.png"
     },
     {
+      "Id": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\Images\\login.png",
+      "PackagePath": "staticwebassets\\Images\\login.png"
+    },
+    {
+      "Id": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\css\\carousal_slider.css",
+      "PackagePath": "staticwebassets\\css\\carousal_slider.css"
+    },
+    {
       "Id": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

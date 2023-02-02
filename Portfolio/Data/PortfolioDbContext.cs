@@ -12,5 +12,6 @@ namespace Portfolio.Data
 
         public DbSet<Portfolio_Data> Portfolio_Data { get; set; }
         public DbSet<Experience> Experience { get; set; }
+        public DbSet<ContactUs> ContactUs { get; set; }
     }
 }

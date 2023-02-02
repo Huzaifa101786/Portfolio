@@ -32,7 +32,11 @@ namespace Portfolio.Controllers
         {
             return View();
         }
-		
+		public IActionResult Signup()
+		{
+			return View();
+		}
+
 		[HttpPost]
         public IActionResult Add_Proj(Portfolio_Data model)
         {
@@ -75,6 +79,23 @@ namespace Portfolio.Controllers
 			return RedirectToAction("Front_Page");
 		}
 
+		[HttpPost]
+		public IActionResult ContactUs(ContactUs model)
+		{
+			var ContactUs = new ContactUs()
+			{
+				ContactId = Guid.NewGuid(),
+				Name = model.Name,
+                Email = model.Email,
+                Subject = model.Subject,
+				Message = model.Message,
+				
+			};
+			portfolioDbContext.ContactUs.Add(ContactUs);
+			portfolioDbContext.SaveChanges();
+			return RedirectToAction("Front_Page");
+		}
+
 		/*Show added Project*/
 
 		[HttpGet]
@@ -98,7 +119,15 @@ namespace Portfolio.Controllers
         /*Add Experience*/
         public IActionResult Add_Experience()
         {
-            return View();
+            /*var p_data = Experience;
+			model exp_data = ImgCreateModel;
+			
+
+			dynamic model = new System.Dynamic.ExpandoObject();
+			model.portf = p_data;
+			model.Exp = exp_data;*/
+
+			return View();
         }
         /*[HttpPost]
         public IActionResult Add_Experience(Portfolio_Data model)

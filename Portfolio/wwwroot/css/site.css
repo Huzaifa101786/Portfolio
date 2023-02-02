@@ -1,4 +1,4 @@
-html {
+﻿html {
     font-size: 14px;
     
 }
@@ -16,6 +16,9 @@ html {
     
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
 body {
     margin-bottom: 60px;
     background-image: url('https://i.pinimg.com/originals/37/8c/d4/378cd4ea61758d6e802d4612b9c76583.jpg');
@@ -293,6 +296,13 @@ lex-direction: column;
     margin-top: 50px;
     width: 550px;
     height: 300px;
+    border-radius: 17px;
+}
+.container_proj {
+    position: relative;
+    width: 412px;
+    height: 320px;
+    margin-bottom:120px;
     border-radius: 17px;
 }
 
@@ -673,16 +683,405 @@ html {
     font-weight: 500;
 }
 
-
-   
-
-
-
-
-
-
-
+/*Carousal slider*/
+.bg-product {
+    /* SET Height cho nó rồi bảo sao ko lỗi? */
+    /*height: 446px;*/
+    background: #d1d7f5;
+    /* overflow: hidden; */
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*carousal*/
+* {
+    box-sizing: border-box
+}
+
+#lbl_txt {
+    padding: 20px 30px;
+    border-radius: 50px;
+    color: white;
+    font-size: x-large;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 4px 4px 2px;
+    /*shadow-color: grey;*/
+    background: rgb(255 255 255 / 21%)
+    /* border-radius:2px;
+    border-color:dimgrey;*/
+}
+#lbl_txtx {
+    backdrop-filter: blur(50px);
+    /*shadow-color: grey;*/
+    background: rgb(255 255 255 / 68%);
+    /* border-radius:2px;
+    border-color:dimgrey;*/
+}
+#lbl_txt2 {
+    padding: 20px 30px;
+    border-radius: 25px;
+    color: black;
+    font-size: large;
+    backdrop-filter: blur(5px);
+    /*box-shadow: 2px 4px 4px 2px;*/
+    /*shadow-color: grey;*/
+    background: rgb(255 255 255 / 67%)
+    /* border-radius:2px;
+    border-color:dimgrey;*/
+}
+
+#lbl_txt3 {
+    padding: 20px 30px;
+    border-radius: 100%;
+    color: black;
+    font-size: large;
+    backdrop-filter: blur(5px);
+    /*box-shadow: 2px 4px 4px 2px;*/
+    /*shadow-color: grey;*/
+    background: rgb(255 255 255 / 67%)
+    /* border-radius:2px;
+    border-color:dimgrey;*/
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    max-height: 550px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/*Login*/
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+.container-login100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    /*background: #9053c7;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+}
+@media (max-width: 992px) {
+    .wrap-login100 {
+        padding: 177px 90px 33px 85px;
+    }
+
+    .login100-pic {
+        width: 35%;
+    }
+
+    .login100-form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap-login100 {
+        padding: 100px 80px 33px 80px;
+    }
+
+    .login100-pic {
+        display: none;
+    }
+
+    .login100-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .wrap-login100 {
+        padding: 100px 15px 33px 15px;
+    }
+}
+
+.redbtn{
+    color:red;
+}
+.redbtn:hover{
+    color:black;
+}
+
+    .wrap-login100 {
+        width: 960px;
+        backdrop-filter: blur(10px);
+        background: #ffffff6b;
+        border-radius: 10px;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 177px 130px 33px 95px;
+    }
+.login100-pic {
+    width: 316px;
+}
+
+    .login100-pic img {
+        max-width: 100%;
+    }
+
+.login100-form {
+    width: 290px;
+}
+
+.login100-form-title {
+    font-family: Poppins-Bold;
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 54px;
+}
+
+    .focus-input100 .login100-form-title {
+    font-family: Poppins-Bold;
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 54px;
+}
+.focus-input100 {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: rgba(87,184,70, 0.8);
+}
+.wrap-input100 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+.input100 {
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 68px;
+}
+    .input100:focus + .focus-input100 {
+        -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+        animation: anim-shadow 0.5s ease-in-out forwards;
+    }
+        .input100:focus + .focus-input100 + .symbol-input100 {
+            color: #57b846;
+            padding-left: 28px;
+        }
+
+.symbol-input100 {
+    font-size: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+    pointer-events: none;
+    color: #666666;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.symbol-input100 {
+    font-size: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+    pointer-events: none;
+    color: #666666;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.login100-form-btn {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: #316eced9;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+    .login100-form-btn:hover {
+        background: #333333;
+    }
+
+.container-login100-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
 
 

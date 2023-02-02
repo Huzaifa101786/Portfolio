@@ -44,8 +44,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXEZyb250X1BhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Intern/Portfolio/Portfolio/Views/Portfolio/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Intern/Portfolio/Portfolio/Views/Portfolio/Proj_details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXFByb2pfZGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern/Portfolio/Portfolio/Views/Portfolio/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXFNpZ251cC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Intern/Portfolio/Portfolio/Views/Shared/Error.cshtml]

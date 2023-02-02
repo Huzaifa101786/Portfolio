@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ihYk2b69hcJVFDjVKY0N4HUjHE4HIo+UigE7Vt7zixU=",
+  "Hash": "1Tn8yMC28S757RBpuGS4pjO8iEmHq6rng6kzGS2LBT8=",
   "Source": "Portfolio",
   "BasePath": "_content/Portfolio",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Intern\\Portfolio\\Portfolio\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Portfolio.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\css\\carousal_slider.css",
+      "SourceId": "Portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\",
+      "BasePath": "_content/Portfolio",
+      "RelativePath": "css/carousal_slider.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\carousal_slider.css"
     },
     {
       "Identity": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\css\\site.css",
@@ -134,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\front.png"
+    },
+    {
+      "Identity": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\Images\\login.png",
+      "SourceId": "Portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\",
+      "BasePath": "_content/Portfolio",
+      "RelativePath": "Images/login.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\login.png"
     },
     {
       "Identity": "D:\\Intern\\Portfolio\\Portfolio\\wwwroot\\js\\site.js",

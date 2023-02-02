@@ -1,19 +1,6 @@
 ﻿@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
 @*@using Multiple_Model_Core_MVC.Models*@
 @model dynamic
-@*@model List<Portfolio.Models.Portfolio_Data>*@
-
-    @*
-        For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-    *@
-    @{
-    }
-@*<head>
-    <style>
-background-image: url(Images/bg.png)
-</style>
-</head>*@
-@*<img src="~/Images/bg.png" />*@
 
 <div class="container-fluid">
 <section class="home" id="home">
@@ -28,7 +15,7 @@ background-image: url(Images/bg.png)
 </section>
 <br>
 <br>
-
+<div class="container">
     <h1 class="title text-center">About me</h1>
     <div class="row">
         <div class="col-md-6" style="height: 450px">
@@ -37,12 +24,12 @@ background-image: url(Images/bg.png)
         <div class="col-md-6" id="abt_me">
             <p id="abt_me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
             <div style="padding-left:40px;margin-top:20px">
-                <a class="button btn-danger" style="padding:10px 10px; border-radius:7px" asp-action="CV">Check my CV</a>
+                <a class="button btn-danger" style="padding:10px 10px; border-radius:7px" asp-action="CV">CHECK MY CV</a>
             </div>
              
         </div>
     </div>
-
+</div>
     <br>
     <br>
 
@@ -51,23 +38,25 @@ background-image: url(Images/bg.png)
         <a asp-action="CV" class="button btn-light add_ex" >Add Experience</a>
     </div>
 
+<div class="container">
 <div class="row">
         @foreach (Experience exp in Model.Exp)
         {
             <div class="container container_exp">
-            <img class="img_exp" src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="" />
+                <img class="img_exp" src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="" />
                 <p class="title_exp">@exp.Domain_Name</p>
                 <p class="title_exp2">@exp.Company_Name</p>
                 
-            <div class="overlay_exp"></div>
+                 <div class="overlay_exp"></div>
             <div class="button button_exp"><a href="#"> CHECK DETAILS </a></div>
-        </div>
-        
+            </div>       
         }
+        </div>
+    </div>
         
 <br />
 <br />
-
+    
     <div class="container py-3 text-lg-center">
         <h1 class="text-center title">MY PROJECTS</h1>
             <a asp-action="CV" class="button btn-light add_ex">Add Experience</a>
@@ -79,8 +68,8 @@ background-image: url(Images/bg.png)
 
             @*@foreach (var data in Model)*@
             @foreach (Portfolio_Data data in Model.portf)
-            {               
-                <div class="col col-sm-4">
+            {
+                    <div class="container container_proj"> @*col col-sm-4*@ 
                     <div class="card-sl">
                         <div class="card-image">
 
@@ -89,16 +78,20 @@ background-image: url(Images/bg.png)
                         </div>
 
                         <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
-                        <div class="card-heading">
+                            <div class="card-heading text-uppercase text-center" style="color:dimgrey">
                             @data.Proj_Name
+                        </div>                        
+                        <div class="card-text text-center">
+                                <b>Language:</b> @data.Proj_Language
                         </div>
-                        <div class="card-text">
-                            @data.Proj_Description
+                        <div class="card-text text-center">
+                                <b>Project Type:</b> @data.Proj_Type
                         </div>
-                        <div class="card-text">
-                            @data.Proj_Language
-                        </div>
-                        <a href="" class="card-button"> Check Details</a>
+                            <div class="card-text text-center">
+                                <b>Description:</b> @data.Proj_Description
+                            </div>
+                        
+                        <a asp-action="Proj_details" class="card-button"> Check Details</a>
                     </div>
                 </div>        
             }
